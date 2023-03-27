@@ -1,16 +1,22 @@
 {
     "version":2,
     "buildCommand": "next build",
+    "cleanUrls": true,
+    "devCommand": "next dev",
+    "framework": null,
     "name":"mern-social",
+    "installCommand": "npm install",
+    "outputDirectory": "build",
+    "public": true,
     "builds":[
         {
-            "source":"/backend/server.js",
+            "src":"/backend/server.js",
             "use":"@vercel/node"
         }
     ],
-    "redirects":[
+    "routes":[
         {
-            "src":"/(.*)",
+            "source":"/(.*)",
             "destination":"/backend/server.js"
         }
     ]
