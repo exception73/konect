@@ -1,4 +1,6 @@
 {
+    "version":2,
+    "name":"mern-social",
     "builds":[
         {
             "src":"./backend/server.js",
@@ -7,8 +9,8 @@
     ],
     "routes":[
         {
-            "src":"/.*",
-            "dest":"app.js"
+            "src":"/(.*)",
+            "dest":"/backend/server.js"
         }
     ]
 }
