@@ -13,11 +13,6 @@
             "src":"/backend/server.js",
             "use":"@vercel/node"
         }
-    ],
-    "routes":[
-        {
-            "source":"/(.*)",
-            "destination":"/backend/server.js"
-        }
     ]
+   
 }
