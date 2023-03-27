@@ -1,16 +1,17 @@
 {
     "version":2,
+    "buildCommand": "next build",
     "name":"mern-social",
     "builds":[
         {
-            "src":"backend/server.js",
+            "source":"/backend/server.js",
             "use":"@vercel/node"
         }
     ],
-    "routes":[
+    "redirects":[
         {
             "src":"/(.*)",
-            "dest":"backend/server.js"
+            "destination":"/backend/server.js"
         }
     ]
 }
